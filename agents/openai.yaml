@@ -1,4 +1,4 @@
 interface:
   display_name: "Lab Report PDF"
-  short_description: "Write polished lab reports as LaTeX PDFs"
-  default_prompt: "Use $lab-report-pdf to write a polished experiment report PDF from the lab guide, measured data, and reference formatting."
+  short_description: "Build, compile, and verify LaTeX/PDF lab reports"
+  default_prompt: "Use $lab-report-pdf to turn the lab guide, measured data, and any reference PDF into a compiled, visually checked LaTeX/PDF experiment report."

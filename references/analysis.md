@@ -2,48 +2,50 @@
 
 ## General Principle
 
-The analysis section must follow the lab guide's report requirements. Do not write one generic paragraph when the guide lists multiple comparison tasks. Convert each requirement into a clear item or subsection.
+The analysis section must follow the lab guide's actual requirements. Do not compress multiple required comparisons into one generic paragraph. Convert each requirement into a distinct item, paragraph, or subsection.
 
 ## Recommended Structure
 
 For each analysis item:
 
-1. Start with a bold numbered title.
-2. Put the explanation on the next line as a new paragraph.
-3. State what the guide asks to compare or discuss.
-4. Give measured result, theoretical result, and deviation.
-5. Explain the physical reason for agreement or disagreement.
+1. State what is being compared or discussed.
+2. Give the measured result.
+3. Give the theoretical, expected, or reference result when available.
+4. Quantify the deviation or contrast.
+5. Explain the physical or engineering reason.
 
 Example pattern:
 
 ```latex
-\noindent\textbf{3. 赤道处交流激磁和直流激磁读数比较。}\par
+\noindent\textbf{3. 主频分量与理论值比较}\par
 
-指导书要求比较交流和直流激磁时赤道处高斯计读数，并与理论值比较。...
+根据频谱结果，第 4 个频点的实测幅值为 $0.5298\,\mathrm{V}$，理论值约为
+$0.5000\,\mathrm{V}$，相对误差约为 $5.96\%$。该误差主要来自信号源幅值设定、
+ADC 参考电压偏差以及量化误差。
 ```
 
-## What Counts as Detailed Analysis
+## What Counts As Detailed Analysis
 
 Include:
 
-- Trend description: increase/decrease/constant/nonlinear.
-- Quantitative comparison: measured value, theory value, relative error.
-- Physical mechanism: why the trend occurs.
-- Model assumptions: ideal conductor, point probe, uniform field, no loss, etc.
-- Measurement limitations: instrument response, alignment, positioning, reading uncertainty, waveform/phase.
+- trend description: increase, decrease, constant, nonlinear, saturation, oscillation, leakage, or concentration of energy
+- quantitative comparison: measured value, theory/reference value, absolute or relative error
+- physical mechanism: why the trend occurs
+- model assumptions: ideal conductor, ideal sampling, no loss, uniform field, linear region, etc.
+- measurement limitations: instrument response, alignment, positioning, reading uncertainty, waveform quality, quantization, trigger stability
 
 Avoid:
 
-- "基本符合理论" without values.
-- "可能有误差" without source.
-- Repeating table values without interpretation.
-- Mixing two separate experiments into one undifferentiated conclusion.
+- "matches theory" without values
+- "there may be error" without naming a source
+- repeating table values without interpretation
+- mixing separate experiments into one undifferentiated conclusion
 
 ## Combined Reports
 
 If one PDF includes multiple experiments:
 
-- Keep data processing clearly separated by experiment.
-- Keep the analysis section separated by experiment.
-- Each experiment's analysis should directly answer its own guide requirements.
-- Use a final discussion only to summarize cross-experiment learning or general error sources.
+- keep data processing separated by experiment
+- keep the analysis separated by experiment
+- make each experiment answer its own guide requirements directly
+- use a final overall discussion only for shared lessons or common error sources

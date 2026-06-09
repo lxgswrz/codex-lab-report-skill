@@ -1,67 +1,101 @@
 # Experiment Report Workflow
 
-## 1. Read the Sources
+## 1. Choose The Correct Deliverable
 
-Start by locating:
+Start by deciding what the user actually wants:
 
-- The experiment title and course name.
-- Experiment purpose.
-- Theory and formulas.
-- Instrument list.
-- Data-recording tables.
-- The exact "实验报告要求".
-- Any teacher/template requirements.
+- If the user explicitly wants Word editing, this skill should not be the main workflow.
+- If the user wants a printable report, LaTeX, PDF, Tectonic, a reference-PDF style, or formula-heavy stable output, stay on the LaTeX/PDF path.
+- If the user names a compiler, treat that as a real requirement.
 
-If the lab guide is a PDF image or Chinese extraction is poor, render relevant pages and inspect visually.
+Do this before reading nearby `.docx` files or reusing earlier Word-based report scripts.
 
-## 2. Plan the Report
+## 2. Read The Sources
 
-Use this default structure unless the guide/reference format says otherwise:
+Locate:
 
-1. 封面
-2. 实验目的和要求
-3. 实验内容和原理
-4. 主要仪器设备
-5. 实验数据记录与处理
-6. 实验结果与分析
-7. 思考与讨论、心得或误差分析
+- Experiment title and course name
+- Experiment purpose
+- Theory and formulas
+- Instrument list
+- Data-recording tables
+- Exact report requirements, discussion items, or scoring items
+- Any teacher or template requirements
+- Any reference PDF or report whose visual structure should be mimicked
 
-For combined reports, keep one unified cover and front matter, then separate experiments inside the data and analysis sections.
+If the lab guide is a scanned PDF or text extraction is poor, render relevant pages and inspect them visually rather than trusting broken text extraction.
 
-## 3. Process Data
+## 3. Plan The Report
+
+Use this default structure unless the guide or reference format says otherwise:
+
+1. Cover
+2. Experiment purpose and requirements
+3. Experiment content and theory
+4. Instruments and equipment
+5. Data recording and processing
+6. Results and analysis
+7. Discussion, error analysis, or reflection
+8. Optional appendix
+
+Before writing, decide:
+
+- Separate cover page or inline front matter
+- Binding line needed or not
+- Single experiment or combined experiments
+- Code section needed or not
+- Figure-heavy, table-heavy, or theory-heavy layout emphasis
+
+For combined reports, keep one unified cover/front matter and separate each experiment clearly in the data and analysis sections.
+
+## 4. Process Data
 
 For every measured quantity:
 
-- State the raw measured value and unit.
-- Show the formula used for conversion.
-- Show at least one representative calculation.
-- Present final values with appropriate significant digits.
-- Compare measured and theoretical values when theory is available.
+- State the raw measured value and unit
+- Show the formula used for conversion
+- Show at least one representative calculation when calculation matters
+- Present final values with sensible significant digits
+- Compare measured and theoretical values when theory is available
 
 For plots:
 
-- Label axes with quantity and unit.
-- Include measured and theoretical curves when relevant.
-- Refer to the plot in the analysis.
+- Label axes with quantity and unit
+- Include measured and theoretical curves when relevant
+- Refer to the plot explicitly in the analysis
 
-## 4. Draft the Report
+## 5. Draft The Report
 
-Write in Chinese academic style. Avoid empty phrases like "误差较大" without explaining source and mechanism. Keep formulas and variables in LaTeX.
+Write in Chinese academic style. Avoid generic statements without evidence. Keep formulas, variables, units, and commands in proper LaTeX form.
 
 Use the lab guide requirements as the checklist for the analysis section. If the guide says "compare and discuss", include:
 
-- What the data show.
-- Whether it agrees with theory.
-- The quantitative deviation.
-- Why the deviation is physically reasonable.
+- what the data show
+- whether it agrees with theory
+- the quantitative deviation
+- why the deviation is physically reasonable
 
-## 5. Finalize
+If a reference PDF is provided, inspect its cover and page style first, then align the LaTeX structure to it.
 
-After compiling, render and inspect:
+## 6. Compile For Real
 
-- Cover information.
-- Tables and formulas.
-- Figures and captions.
-- Page breaks.
-- Binding line.
-- No overlapping text or tiny table fonts.
+Do not stop at source generation.
+
+- Produce a `.tex` file
+- Compile it into a `.pdf`
+- Report the actual compiler used
+- If the requested compiler fails, explain why and whether you switched
+
+## 7. Finalize
+
+After compiling, inspect:
+
+- Cover information and visual balance
+- Tables, formulas, and code blocks
+- Figures and captions
+- Page breaks
+- Binding line
+- Font rendering
+- No overlapping text or unreadably small content
+
+The report is only complete when the PDF exists and the key pages look correct.
